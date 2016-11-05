@@ -6,9 +6,33 @@ Evil Insult Generator's goal is to offer the most evil insults. Please help us t
 
 ### Installation
 
-_TBD_
+Clone this repository to your local machine
+`git clone https://github.com/EvilInsultGenerator/telegram-bot-ruby.git`
+For the first you need to install gems required to start a bot:
+`bundle install`
+Then you need to create `secrets.yml` where your bot unique tokens will be stored and `database.yml` where database credentials will be stored.
+```ruby
+#config/database.yml
+adapter: postgresql
+database: *your_DB_name*
+encoding: unicode
+pool: 5
+timeout: 5000
+```
+```ruby
+#config/secrets.yml
+telegram_bot_token: *your_bot_token*
+botan_token: *your_botan_token*
+```
+Then you need to fill your Telegram bot unique token to the `secrets.yml` file and your database credentials to `database.yml`.
 
-Try out [@EIG_bot](https://telegram.me/@EIG_bot).
+After this you need to create and migrate your database:
+`rake db:create db:migrate`
+Great!
+Now you can easily start your bot just by running this command:
+`bin/bot`
+
+__Try out [@EIG_bot](https://telegram.me/@EIG_bot).__
 
 ### Contact
 
