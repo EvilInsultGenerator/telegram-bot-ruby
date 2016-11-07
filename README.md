@@ -1,7 +1,7 @@
 # Evil Insult Generator Ruby Telegram Bot
 [![Build Status](https://travis-ci.org/EvilInsultGenerator/telegram-bot-ruby.svg?branch=master)](https://travis-ci.org/EvilInsultGenerator/telegram-bot-ruby)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/323a74806cf546b4a8b9c473ed224d2d)](https://www.codacy.com/app/EvilInsultGenerator/telegram-bot-ruby?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EvilInsultGenerator/telegram-bot-ruby&amp;utm_campaign=Badge_Grade)
-[![Website](https://img.shields.io/website-up-down-green-red/https/evilinsult.com.svg)]()
+[![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg)](https://evilinsult.com)
 
 Evil Insult Generator's goal is to offer the most evil insults. Please help us to reach this honorable purpose by submitting insults via mail.
 
