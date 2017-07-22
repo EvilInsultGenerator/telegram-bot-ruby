@@ -32,6 +32,8 @@ Great!
 Now you can easily start your bot just by running this command:
 `bin/bot`
 
+Some more specific info you can also find [here](https://github.com/atipugin/telegram-bot-ruby).
+
 __Try out [@EIG_bot](https://telegram.me/EIG_bot).__
 
 ### Contact

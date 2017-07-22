@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'telegram/bot'
+require 'telegram/bot/botan'
+require './lib/message_responder'
+require './lib/app_configurator'
+
+config = AppConfigurator.new
+config.configure
+
+token = config.get_token
+logger = config.get_logger
+botan_token=config.get_botan_token
+
+logger.debug 'Starting telegram bot'
+
+Telegram::Bot::Client.run(token) do |bot|
+  bot.listen do |message|
+		bot.enable_botan!(botan_token)
+    options = {bot: bot, message: message}
+    content = message.respond_to?(:text) ? message.text : message.data
+    logger.debug "@#{message.from.username}: #{content}" 
+    MessageResponder.new(options).respond
+  end
+end
